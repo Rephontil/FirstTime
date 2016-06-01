@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZYTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController = [[ZYTabBarController alloc] init];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

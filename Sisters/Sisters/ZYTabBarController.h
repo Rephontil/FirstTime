@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZYTabBarController.h
 //  Sisters
 //
 //  Created by ZhouYong on 16/6/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZYTabBarController : UITabBarController
 
 @end
-
