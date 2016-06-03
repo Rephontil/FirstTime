@@ -13,6 +13,12 @@
 		8ED4E6B91CFF042900BA7A68 /* SistersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6B81CFF042900BA7A68 /* SistersTests.m */; };
 		8ED4E6C41CFF042900BA7A68 /* SistersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6C31CFF042900BA7A68 /* SistersUITests.m */; };
 		8ED4E6D31CFF04AF00BA7A68 /* ZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6D21CFF04AF00BA7A68 /* ZYTabBarController.m */; };
+		8ED4E6D81CFF16E100BA7A68 /* ZYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6D71CFF16E100BA7A68 /* ZYEssenceViewController.m */; };
+		8ED4E6DB1CFF16F200BA7A68 /* ZYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6DA1CFF16F200BA7A68 /* ZYNewViewController.m */; };
+		8ED4E6DE1CFF178000BA7A68 /* ZYfriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6DD1CFF178000BA7A68 /* ZYfriendTrendsViewController.m */; };
+		8ED4E6E11CFF179200BA7A68 /* ZYmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6E01CFF179200BA7A68 /* ZYmeViewController.m */; };
+		8ED4E6E41CFF211000BA7A68 /* ZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6E31CFF211000BA7A68 /* ZYTabBar.m */; };
+		8EE42FCB1D01BB780029B26F /* UIView+ZYExternsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42FCA1D01BB780029B26F /* UIView+ZYExternsion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,19 @@
 		8ED4E6C51CFF042900BA7A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED4E6D11CFF04AF00BA7A68 /* ZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBarController.h; sourceTree = "<group>"; };
 		8ED4E6D21CFF04AF00BA7A68 /* ZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarController.m; sourceTree = "<group>"; };
+		8ED4E6D61CFF16E100BA7A68 /* ZYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYEssenceViewController.h; sourceTree = "<group>"; };
+		8ED4E6D71CFF16E100BA7A68 /* ZYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYEssenceViewController.m; sourceTree = "<group>"; };
+		8ED4E6D91CFF16F200BA7A68 /* ZYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNewViewController.h; sourceTree = "<group>"; };
+		8ED4E6DA1CFF16F200BA7A68 /* ZYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNewViewController.m; sourceTree = "<group>"; };
+		8ED4E6DC1CFF178000BA7A68 /* ZYfriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYfriendTrendsViewController.h; sourceTree = "<group>"; };
+		8ED4E6DD1CFF178000BA7A68 /* ZYfriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYfriendTrendsViewController.m; sourceTree = "<group>"; };
+		8ED4E6DF1CFF179200BA7A68 /* ZYmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYmeViewController.h; sourceTree = "<group>"; };
+		8ED4E6E01CFF179200BA7A68 /* ZYmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYmeViewController.m; sourceTree = "<group>"; };
+		8ED4E6E21CFF211000BA7A68 /* ZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBar.h; sourceTree = "<group>"; };
+		8ED4E6E31CFF211000BA7A68 /* ZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar.m; sourceTree = "<group>"; };
+		8EE42FC91D01BB780029B26F /* UIView+ZYExternsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYExternsion.h"; sourceTree = "<group>"; };
+		8EE42FCA1D01BB780029B26F /* UIView+ZYExternsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYExternsion.m"; sourceTree = "<group>"; };
+		8EE42FCC1D01BBE70029B26F /* PrefixHeaderVIew.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderVIew.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +120,19 @@
 				8ED4E6A21CFF042900BA7A68 /* AppDelegate.m */,
 				8ED4E6D11CFF04AF00BA7A68 /* ZYTabBarController.h */,
 				8ED4E6D21CFF04AF00BA7A68 /* ZYTabBarController.m */,
-				8ED4E6AA1CFF042900BA7A68 /* Assets.xcassets */,
-				8ED4E6AF1CFF042900BA7A68 /* Info.plist */,
+				8ED4E6E21CFF211000BA7A68 /* ZYTabBar.h */,
+				8ED4E6E31CFF211000BA7A68 /* ZYTabBar.m */,
+				8ED4E6DF1CFF179200BA7A68 /* ZYmeViewController.h */,
+				8ED4E6E01CFF179200BA7A68 /* ZYmeViewController.m */,
+				8ED4E6D61CFF16E100BA7A68 /* ZYEssenceViewController.h */,
+				8ED4E6D71CFF16E100BA7A68 /* ZYEssenceViewController.m */,
+				8ED4E6D91CFF16F200BA7A68 /* ZYNewViewController.h */,
+				8ED4E6DA1CFF16F200BA7A68 /* ZYNewViewController.m */,
+				8ED4E6DC1CFF178000BA7A68 /* ZYfriendTrendsViewController.h */,
+				8ED4E6DD1CFF178000BA7A68 /* ZYfriendTrendsViewController.m */,
+				8EE42FC91D01BB780029B26F /* UIView+ZYExternsion.h */,
+				8EE42FCA1D01BB780029B26F /* UIView+ZYExternsion.m */,
+				8EE42FCC1D01BBE70029B26F /* PrefixHeaderVIew.pch */,
 				8ED4E69E1CFF042900BA7A68 /* Supporting Files */,
 			);
 			path = Sisters;
@@ -111,6 +141,8 @@
 		8ED4E69E1CFF042900BA7A68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8ED4E6AF1CFF042900BA7A68 /* Info.plist */,
+				8ED4E6AA1CFF042900BA7A68 /* Assets.xcassets */,
 				8ED4E69F1CFF042900BA7A68 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -266,9 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED4E6D81CFF16E100BA7A68 /* ZYEssenceViewController.m in Sources */,
+				8ED4E6DE1CFF178000BA7A68 /* ZYfriendTrendsViewController.m in Sources */,
+				8ED4E6E11CFF179200BA7A68 /* ZYmeViewController.m in Sources */,
 				8ED4E6A31CFF042900BA7A68 /* AppDelegate.m in Sources */,
+				8ED4E6E41CFF211000BA7A68 /* ZYTabBar.m in Sources */,
+				8ED4E6DB1CFF16F200BA7A68 /* ZYNewViewController.m in Sources */,
 				8ED4E6D31CFF04AF00BA7A68 /* ZYTabBarController.m in Sources */,
 				8ED4E6A01CFF042900BA7A68 /* main.m in Sources */,
+				8EE42FCB1D01BB780029B26F /* UIView+ZYExternsion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +368,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = Sisters/PrefixHeaderVIew.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -371,6 +410,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = Sisters/PrefixHeaderVIew.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -475,6 +515,7 @@
 				8ED4E6CA1CFF042900BA7A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED4E6CB1CFF042900BA7A68 /* Build configuration list for PBXNativeTarget "SistersTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +524,7 @@
 				8ED4E6CD1CFF042900BA7A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED4E6CE1CFF042900BA7A68 /* Build configuration list for PBXNativeTarget "SistersUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +533,7 @@
 				8ED4E6D01CFF042900BA7A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

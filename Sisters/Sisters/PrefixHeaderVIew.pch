@@ -1,0 +1,22 @@
+//
+//  PrefixHeaderVIew.pch
+//  Sisters
+//
+//  Created by ZhouYong on 16/6/3.
+//  Copyright © 2016年 ZhouYong. All rights reserved.
+//
+
+#ifndef PrefixHeaderVIew_pch
+#define PrefixHeaderVIew_pch
+#import "UIView+ZYExternsion.h"
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+
+#endif /* PrefixHeaderVIew_pch */
