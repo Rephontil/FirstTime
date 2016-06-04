@@ -16,12 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton* newButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [newButton setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateHighlighted];
+    [newButton setBackgroundImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:newButton];
+    [newButton addTarget:self action:@selector(newButtonClick) forControlEvents:(UIControlEventTouchUpInside)];
+    newButton.size = newButton.currentBackgroundImage.size;
+
+//    MainTagSubIconClick
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)newButtonClick{
+    
 }
 
 /*

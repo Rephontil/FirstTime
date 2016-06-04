@@ -19,12 +19,16 @@
     self.navigationItem.title = @"我的关注";
 //     self.title = @"我的关注"; // 这种写法会同时修改 self.navagationItem.title和self.barbuttonItem.title
     
+    /*  这段代码已经用自定义的UIBarButtonItem方法抽取
     UIButton* leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     [leftButton addTarget:self action:@selector(leftButtonClick) forControlEvents:(UIControlEventTouchUpInside)];
     leftButton.size = leftButton.currentBackgroundImage.size;
+    */
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(leftButtonClick)];
     
     
     // Do any additional setup after loading the view.
