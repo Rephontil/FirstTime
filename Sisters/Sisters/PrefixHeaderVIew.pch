@@ -18,7 +18,7 @@
 
 #ifdef DEBUG
 //如果在调试阶段， ZYLog(...)就是系统的NSLog,如果项目在真机上面测试，就是ZYLog(...)空实现，不打印任何信息
-#define ZYLog(...)  NSLog(__VA_ARGS__)
+#define ZYLog(...)  NSLog(__VA_ARGS__);
 
 #else
 #define  ZYLog(...)
@@ -27,6 +27,7 @@
 
 #define ZYLogFun  ZYLog(@"%s",__func__);
 
+#define ZYRGBColor(R,G,B)   [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0];
 
 
 
