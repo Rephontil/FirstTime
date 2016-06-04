@@ -61,10 +61,12 @@
 //    publishButton.frame = CGRectMake(0, 0, publishButton.currentBackgroundImage.size.width, publishButton.currentBackgroundImage.size.height);
 //    publishButton.center = CGPointMake(self.tabBar.frame.size.width*0.5, self.tabBar.frame.size.height*0.5);
 //    [self.tabBar addSubview:publishButton];
+   
     
 //    self.tabBar = [[ZYTabBar alloc] init];
+    [self setValue:[[ZYTabBar alloc] init] forKey:@"tabBar"];//以后遇到只读的属性时候，可以通过把KVC对象赋值给这个只读的属性来设置自定义控件。
     
-    [self setValue:[[ZYTabBar alloc] init] forKey:@"tabBar"];
+    
     
 }
 
@@ -89,7 +91,12 @@
     VC.tabBarItem.selectedImage = [UIImage imageNamed:image];
     VC.tabBarItem.image = [UIImage imageNamed:selectedImage];
     VC.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1];
-    [self addChildViewController:VC];
+//    包装一个导航控制器，添加导航控制器为tabbarcontroller 的子控制器
+    UINavigationController* naVC = [[UINavigationController alloc] initWithRootViewController:VC];
+//    VC.navigationItem.title = title;
+    [self addChildViewController:naVC];
+    
+    
 }
 
 

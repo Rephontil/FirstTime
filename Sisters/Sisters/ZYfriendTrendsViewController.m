@@ -16,8 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"我的关注";
+//     self.title = @"我的关注"; // 这种写法会同时修改 self.navagationItem.title和self.barbuttonItem.title
+    
+    UIButton* leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
+    [leftButton setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    [leftButton addTarget:self action:@selector(leftButtonClick) forControlEvents:(UIControlEventTouchUpInside)];
+    leftButton.size = leftButton.currentBackgroundImage.size;
+    
+    
     // Do any additional setup after loading the view.
 }
+
+
+- (void)leftButtonClick{
+//    ZYLog(@"%s",__func__);
+    ZYLogFun
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
