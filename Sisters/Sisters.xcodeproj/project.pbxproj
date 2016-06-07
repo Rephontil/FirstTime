@@ -35,9 +35,18 @@
 		8E6A94E71D031CFA00990026 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6A94D91D031CFA00990026 /* 11.png */; };
 		8E6A94E81D031CFA00990026 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6A94DA1D031CFA00990026 /* 12.png */; };
 		8E6A94E91D031CFA00990026 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E6A94DB1D031CFA00990026 /* 13.png */; };
+		8EC8E51F1D06CE26006F8339 /* ZYRecommandCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8E51E1D06CE26006F8339 /* ZYRecommandCategory.m */; };
+		8EC8E5231D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8E5211D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m */; };
+		8EC8E5241D06E311006F8339 /* ZYRecommandCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8E5221D06E311006F8339 /* ZYRecommandCategoryTableViewCell.xib */; };
 		8ED4E6A01CFF042900BA7A68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E69F1CFF042900BA7A68 /* main.m */; };
 		8ED4E6B91CFF042900BA7A68 /* SistersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6B81CFF042900BA7A68 /* SistersTests.m */; };
 		8ED4E6C41CFF042900BA7A68 /* SistersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4E6C31CFF042900BA7A68 /* SistersUITests.m */; };
+		8EF13C3D1D044A780057FF52 /* podFile in Resources */ = {isa = PBXBuildFile; fileRef = 8EF13C3C1D044A780057FF52 /* podFile */; };
+		8EF13C411D045FFF0057FF52 /* ZYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF13C3F1D045FFF0057FF52 /* ZYRecommendViewController.m */; };
+		8EF13C421D045FFF0057FF52 /* ZYRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF13C401D045FFF0057FF52 /* ZYRecommendViewController.xib */; };
+		8EF141661D05197B0057FF52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF141651D05197B0057FF52 /* SystemConfiguration.framework */; };
+		8EF141711D0548D60057FF52 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF141701D0548D60057FF52 /* Foundation+Log.m */; };
+		A4E1C9A5DE266B31B88B0140 /* libPods-Sisters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37930DE084A26224BE0C0384 /* libPods-Sisters.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C706503FF9EE049686B18A0 /* Pods-Sisters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sisters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sisters/Pods-Sisters.release.xcconfig"; sourceTree = "<group>"; };
+		37930DE084A26224BE0C0384 /* libPods-Sisters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sisters.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6A94911D02B44900990026 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E6A94921D02B44900990026 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E6A94951D02B44900990026 /* ZYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYEssenceViewController.h; sourceTree = "<group>"; };
 		8E6A94961D02B44900990026 /* ZYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYEssenceViewController.m; sourceTree = "<group>"; };
-		8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYfriendTrendsViewController.h; sourceTree = "<group>"; };
+		8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYfriendTrendsViewController.h; path = "../../FriendTrends-关注/Controller/ZYfriendTrendsViewController.h"; sourceTree = "<group>"; };
 		8E6A949C1D02B44900990026 /* ZYfriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYfriendTrendsViewController.m; sourceTree = "<group>"; };
 		8E6A94A11D02B44900990026 /* ZYmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYmeViewController.h; sourceTree = "<group>"; };
 		8E6A94A21D02B44900990026 /* ZYmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYmeViewController.m; sourceTree = "<group>"; };
@@ -98,6 +109,11 @@
 		8E6A94D91D031CFA00990026 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
 		8E6A94DA1D031CFA00990026 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
 		8E6A94DB1D031CFA00990026 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		8EC8E51D1D06CE26006F8339 /* ZYRecommandCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYRecommandCategory.h; path = ../Controller/ZYRecommandCategory.h; sourceTree = "<group>"; };
+		8EC8E51E1D06CE26006F8339 /* ZYRecommandCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYRecommandCategory.m; path = ../Controller/ZYRecommandCategory.m; sourceTree = "<group>"; };
+		8EC8E5201D06E311006F8339 /* ZYRecommandCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecommandCategoryTableViewCell.h; sourceTree = "<group>"; };
+		8EC8E5211D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRecommandCategoryTableViewCell.m; sourceTree = "<group>"; };
+		8EC8E5221D06E311006F8339 /* ZYRecommandCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommandCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		8ED4E69B1CFF042900BA7A68 /* Sisters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sisters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED4E69F1CFF042900BA7A68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ED4E6AF1CFF042900BA7A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +124,13 @@
 		8ED4E6C31CFF042900BA7A68 /* SistersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SistersUITests.m; sourceTree = "<group>"; };
 		8ED4E6C51CFF042900BA7A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EE42FCC1D01BBE70029B26F /* PrefixHeaderVIew.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderVIew.pch; sourceTree = "<group>"; };
+		8EF13C3C1D044A780057FF52 /* podFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podFile; sourceTree = "<group>"; };
+		8EF13C3E1D045FFF0057FF52 /* ZYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecommendViewController.h; sourceTree = "<group>"; };
+		8EF13C3F1D045FFF0057FF52 /* ZYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRecommendViewController.m; sourceTree = "<group>"; };
+		8EF13C401D045FFF0057FF52 /* ZYRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendViewController.xib; sourceTree = "<group>"; };
+		8EF141651D05197B0057FF52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8EF141701D0548D60057FF52 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Foundation+Log.m"; path = "FriendTrends-关注/Controller/Foundation+Log.m"; sourceTree = "<group>"; };
+		9E5318D509C5996E318AA242 /* Pods-Sisters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sisters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sisters/Pods-Sisters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF141661D05197B0057FF52 /* SystemConfiguration.framework in Frameworks */,
+				A4E1C9A5DE266B31B88B0140 /* libPods-Sisters.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +165,7 @@
 			children = (
 				8E6A94911D02B44900990026 /* AppDelegate.h */,
 				8E6A94921D02B44900990026 /* AppDelegate.m */,
+				8EF141701D0548D60057FF52 /* Foundation+Log.m */,
 				8E6A94931D02B44900990026 /* Essence-精华 */,
 				8E6A94991D02B44900990026 /* FriendTrends-关注 */,
 				8E6A949F1D02B44900990026 /* Me-我 */,
@@ -171,6 +197,7 @@
 		8E6A94971D02B44900990026 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,9 +222,11 @@
 		8E6A949A1D02B44900990026 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */,
 				8E6A949C1D02B44900990026 /* ZYfriendTrendsViewController.m */,
 				8E6A94CB1D031A1A00990026 /* ZYfriendTrendsViewController.xib */,
+				8EF13C3E1D045FFF0057FF52 /* ZYRecommendViewController.h */,
+				8EF13C3F1D045FFF0057FF52 /* ZYRecommendViewController.m */,
+				8EF13C401D045FFF0057FF52 /* ZYRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +234,8 @@
 		8E6A949D1D02B44900990026 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8E51D1D06CE26006F8339 /* ZYRecommandCategory.h */,
+				8EC8E51E1D06CE26006F8339 /* ZYRecommandCategory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +243,9 @@
 		8E6A949E1D02B44900990026 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EC8E5201D06E311006F8339 /* ZYRecommandCategoryTableViewCell.h */,
+				8EC8E5211D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m */,
+				8EC8E5221D06E311006F8339 /* ZYRecommandCategoryTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,10 +385,13 @@
 		8ED4E6921CFF042900BA7A68 = {
 			isa = PBXGroup;
 			children = (
+				8EF13C3C1D044A780057FF52 /* podFile */,
 				8ED4E69D1CFF042900BA7A68 /* Sisters */,
 				8ED4E6B71CFF042900BA7A68 /* SistersTests */,
 				8ED4E6C21CFF042900BA7A68 /* SistersUITests */,
 				8ED4E69C1CFF042900BA7A68 /* Products */,
+				DB6F03A5AD5D1FBE369A6402 /* Pods */,
+				A21957013E6C2F92528A2BD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -407,6 +444,24 @@
 			path = SistersUITests;
 			sourceTree = "<group>";
 		};
+		A21957013E6C2F92528A2BD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EF141651D05197B0057FF52 /* SystemConfiguration.framework */,
+				37930DE084A26224BE0C0384 /* libPods-Sisters.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB6F03A5AD5D1FBE369A6402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E5318D509C5996E318AA242 /* Pods-Sisters.debug.xcconfig */,
+				1C706503FF9EE049686B18A0 /* Pods-Sisters.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,9 +469,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ED4E6C81CFF042900BA7A68 /* Build configuration list for PBXNativeTarget "Sisters" */;
 			buildPhases = (
+				C8F5F13294ED0CCE450DFAEE /* 📦 Check Pods Manifest.lock */,
 				8ED4E6971CFF042900BA7A68 /* Sources */,
 				8ED4E6981CFF042900BA7A68 /* Frameworks */,
 				8ED4E6991CFF042900BA7A68 /* Resources */,
+				1C000008FDB0F1D4752A391A /* 📦 Embed Pods Frameworks */,
+				B25ABD17890CCD001EDCAC55 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -516,6 +574,7 @@
 			files = (
 				8E6A94E81D031CFA00990026 /* 12.png in Resources */,
 				8E6A94E61D031CFA00990026 /* 10.png in Resources */,
+				8EF13C3D1D044A780057FF52 /* podFile in Resources */,
 				8E6A94E31D031CFA00990026 /* 07.png in Resources */,
 				8E6A94DE1D031CFA00990026 /* 02.png in Resources */,
 				8E6A94E41D031CFA00990026 /* 08.png in Resources */,
@@ -523,6 +582,7 @@
 				8E6A94E71D031CFA00990026 /* 11.png in Resources */,
 				8E6A94DC1D031CFA00990026 /* 00.png in Resources */,
 				8E6A94DD1D031CFA00990026 /* 01.png in Resources */,
+				8EF13C421D045FFF0057FF52 /* ZYRecommendViewController.xib in Resources */,
 				8E6A94E21D031CFA00990026 /* 06.png in Resources */,
 				8E6A94E01D031CFA00990026 /* 04.png in Resources */,
 				8E6A94DF1D031CFA00990026 /* 03.png in Resources */,
@@ -530,6 +590,7 @@
 				8E6A94E91D031CFA00990026 /* 13.png in Resources */,
 				8E6A94E51D031CFA00990026 /* 09.png in Resources */,
 				8E6A94C11D02BFFC00990026 /* Assets.xcassets in Resources */,
+				8EC8E5241D06E311006F8339 /* ZYRecommandCategoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +610,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C000008FDB0F1D4752A391A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sisters/Pods-Sisters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25ABD17890CCD001EDCAC55 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sisters/Pods-Sisters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F5F13294ED0CCE450DFAEE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8ED4E6971CFF042900BA7A68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -556,14 +665,18 @@
 			files = (
 				8E6A94C41D02C5C800990026 /* ZYPerson.m in Sources */,
 				8E6A94BC1D02B44900990026 /* UIBarButtonItem+ZYExtension.m in Sources */,
+				8EC8E5231D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m in Sources */,
+				8EF13C411D045FFF0057FF52 /* ZYRecommendViewController.m in Sources */,
 				8E6A94C71D02D61100990026 /* ZYNavigationController.m in Sources */,
 				8E6A94B71D02B44900990026 /* AppDelegate.m in Sources */,
 				8E6A94BE1D02B44900990026 /* ZYTabBarController.m in Sources */,
 				8E6A94BA1D02B44900990026 /* ZYmeViewController.m in Sources */,
+				8EC8E51F1D06CE26006F8339 /* ZYRecommandCategory.m in Sources */,
 				8ED4E6A01CFF042900BA7A68 /* main.m in Sources */,
 				8E6A94B81D02B44900990026 /* ZYEssenceViewController.m in Sources */,
 				8E6A94BB1D02B44900990026 /* ZYNewViewController.m in Sources */,
 				8E6A94BD1D02B44900990026 /* UIView+ZYExternsion.m in Sources */,
+				8EF141711D0548D60057FF52 /* Foundation+Log.m in Sources */,
 				8E6A94CA1D02F1DA00990026 /* ZYTestViewController.m in Sources */,
 				8E6A94BF1D02B44900990026 /* ZYTabBar.m in Sources */,
 				8E6A94B91D02B44900990026 /* ZYfriendTrendsViewController.m in Sources */,
@@ -686,6 +799,7 @@
 		};
 		8ED4E6C91CFF042900BA7A68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5318D509C5996E318AA242 /* Pods-Sisters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -698,6 +812,7 @@
 		};
 		8ED4E6CA1CFF042900BA7A68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C706503FF9EE049686B18A0 /* Pods-Sisters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
