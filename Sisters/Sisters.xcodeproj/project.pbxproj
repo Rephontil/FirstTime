@@ -132,7 +132,7 @@
 		8ED4E6C31CFF042900BA7A68 /* SistersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SistersUITests.m; sourceTree = "<group>"; };
 		8ED4E6C51CFF042900BA7A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EE42FCC1D01BBE70029B26F /* PrefixHeaderVIew.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderVIew.pch; sourceTree = "<group>"; };
-		8EF13C3C1D044A780057FF52 /* podFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podFile; sourceTree = "<group>"; };
+		8EF13C3C1D044A780057FF52 /* podFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podFile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8EF13C3E1D045FFF0057FF52 /* ZYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecommendViewController.h; sourceTree = "<group>"; };
 		8EF13C3F1D045FFF0057FF52 /* ZYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRecommendViewController.m; sourceTree = "<group>"; };
 		8EF13C401D045FFF0057FF52 /* ZYRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYRecommendViewController.xib; sourceTree = "<group>"; };

@@ -20,6 +20,14 @@
 /**用来保存用户的类别**/
 @property(nonatomic, strong)NSMutableArray* users;
 
+/** 当前页码 */
+@property (nonatomic, assign) NSInteger currentPage;
+
+/** 总数 */
+@property (nonatomic, assign) NSInteger total;
+
+
+
 
 
 

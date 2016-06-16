@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -16,13 +16,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGc-jj-foo">
-                        <rect key="frame" x="13" y="11" width="100" height="121"/>
+                        <rect key="frame" x="13" y="11" width="80" height="121"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="STr-nt-rUU"/>
+                            <constraint firstAttribute="width" constant="80" id="STr-nt-rUU"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwc-Vt-UCG">
-                        <rect key="frame" x="128" y="11" width="100" height="30"/>
+                        <rect key="frame" x="108" y="11" width="100" height="30"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="K2U-Il-X5Q"/>
                             <constraint firstAttribute="height" constant="30" id="a2O-je-vMn"/>
@@ -49,7 +49,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73G-rT-Dhz">
-                        <rect key="frame" x="128" y="102" width="100" height="30"/>
+                        <rect key="frame" x="108" y="102" width="100" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="dIL-Jd-r7s"/>
                             <constraint firstAttribute="width" constant="100" id="vXI-tY-lB2"/>
