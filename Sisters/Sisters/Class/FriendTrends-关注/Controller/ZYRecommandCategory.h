@@ -8,13 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface ZYRecommandCategory : NSObject
 /**<#注释#>**/
-@property(nonatomic, copy)NSString* id;
+@property(nonatomic, assign)NSInteger id;
 /**<#注释#>**/
 @property(nonatomic, assign)NSInteger count;
 /**<#注释#>**/
 @property(nonatomic, strong)NSString* name;
+
+/**用来保存用户的类别**/
+@property(nonatomic, strong)NSMutableArray* users;
+
 
 
 

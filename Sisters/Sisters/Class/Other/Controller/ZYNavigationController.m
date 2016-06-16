@@ -38,6 +38,7 @@
 
 
 
+
 #pragma mark*******可以在这个方法里面拦截所有push进来的控制器***
 /*****************************************************************
  ************CreateDate:Year:2016 Month:06 Date:04 ************
@@ -86,7 +87,7 @@
 
 //    首先setBackgroundImage，image会随着button的大小而改变，图片自动会拉伸来适应button的大小，这个时候任然可以设置button的title，image不会挡住title；
     
-//    相反的的setImage，图片不会进行拉伸，原比例的显示在button上，此时再设置title，title将无法显示，因此可以根据需求选中方法；
+//    相反的的setImage，图片不会进行拉伸，原比例的显示在button上，此时再设置title，title将无法显示，因此可以 根据需求选中方法；
 }
 
 

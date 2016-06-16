@@ -51,6 +51,7 @@
 }
 
 
+
 //@property (weak, nonatomic) IBOutlet UIView *selectedIndicator;
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -64,7 +65,6 @@
     
 //  我之前的那种写法一直不能实现是因为：本人的宏定义文件里面ZYGlobalColor语句后面有符号，读取的时候回中断代码执行
 }
-
 
 
 @end

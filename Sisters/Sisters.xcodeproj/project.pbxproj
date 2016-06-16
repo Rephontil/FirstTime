@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0931631D0DA9F800598A51 /* ZYUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0931611D0DA9F800598A51 /* ZYUserTableViewCell.m */; };
+		8E0931641D0DA9F800598A51 /* ZYUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0931621D0DA9F800598A51 /* ZYUserTableViewCell.xib */; };
+		8E0936E01D1236F400598A51 /* ZYRecommandUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0936DF1D1236F400598A51 /* ZYRecommandUser.m */; };
 		8E6A94B71D02B44900990026 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A94921D02B44900990026 /* AppDelegate.m */; };
 		8E6A94B81D02B44900990026 /* ZYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A94961D02B44900990026 /* ZYEssenceViewController.m */; };
 		8E6A94B91D02B44900990026 /* ZYfriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A949C1D02B44900990026 /* ZYfriendTrendsViewController.m */; };
@@ -69,11 +72,16 @@
 /* Begin PBXFileReference section */
 		1C706503FF9EE049686B18A0 /* Pods-Sisters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sisters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sisters/Pods-Sisters.release.xcconfig"; sourceTree = "<group>"; };
 		37930DE084A26224BE0C0384 /* libPods-Sisters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sisters.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0931601D0DA9F800598A51 /* ZYUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYUserTableViewCell.h; sourceTree = "<group>"; };
+		8E0931611D0DA9F800598A51 /* ZYUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYUserTableViewCell.m; sourceTree = "<group>"; };
+		8E0931621D0DA9F800598A51 /* ZYUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYUserTableViewCell.xib; sourceTree = "<group>"; };
+		8E0936DE1D1236F400598A51 /* ZYRecommandUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecommandUser.h; sourceTree = "<group>"; };
+		8E0936DF1D1236F400598A51 /* ZYRecommandUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRecommandUser.m; sourceTree = "<group>"; };
 		8E6A94911D02B44900990026 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E6A94921D02B44900990026 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E6A94951D02B44900990026 /* ZYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYEssenceViewController.h; sourceTree = "<group>"; };
 		8E6A94961D02B44900990026 /* ZYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYEssenceViewController.m; sourceTree = "<group>"; };
-		8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYfriendTrendsViewController.h; path = "../../FriendTrends-关注/Controller/ZYfriendTrendsViewController.h"; sourceTree = "<group>"; };
+		8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYfriendTrendsViewController.h; sourceTree = "<group>"; };
 		8E6A949C1D02B44900990026 /* ZYfriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYfriendTrendsViewController.m; sourceTree = "<group>"; };
 		8E6A94A11D02B44900990026 /* ZYmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYmeViewController.h; sourceTree = "<group>"; };
 		8E6A94A21D02B44900990026 /* ZYmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYmeViewController.m; sourceTree = "<group>"; };
@@ -197,7 +205,6 @@
 		8E6A94971D02B44900990026 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6A949C1D02B44900990026 /* ZYfriendTrendsViewController.m */,
+				8E6A949B1D02B44900990026 /* ZYfriendTrendsViewController.h */,
 				8E6A94CB1D031A1A00990026 /* ZYfriendTrendsViewController.xib */,
 				8EF13C3E1D045FFF0057FF52 /* ZYRecommendViewController.h */,
 				8EF13C3F1D045FFF0057FF52 /* ZYRecommendViewController.m */,
@@ -236,6 +244,8 @@
 			children = (
 				8EC8E51D1D06CE26006F8339 /* ZYRecommandCategory.h */,
 				8EC8E51E1D06CE26006F8339 /* ZYRecommandCategory.m */,
+				8E0936DE1D1236F400598A51 /* ZYRecommandUser.h */,
+				8E0936DF1D1236F400598A51 /* ZYRecommandUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +256,9 @@
 				8EC8E5201D06E311006F8339 /* ZYRecommandCategoryTableViewCell.h */,
 				8EC8E5211D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m */,
 				8EC8E5221D06E311006F8339 /* ZYRecommandCategoryTableViewCell.xib */,
+				8E0931601D0DA9F800598A51 /* ZYUserTableViewCell.h */,
+				8E0931611D0DA9F800598A51 /* ZYUserTableViewCell.m */,
+				8E0931621D0DA9F800598A51 /* ZYUserTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -585,6 +598,7 @@
 				8EF13C421D045FFF0057FF52 /* ZYRecommendViewController.xib in Resources */,
 				8E6A94E21D031CFA00990026 /* 06.png in Resources */,
 				8E6A94E01D031CFA00990026 /* 04.png in Resources */,
+				8E0931641D0DA9F800598A51 /* ZYUserTableViewCell.xib in Resources */,
 				8E6A94DF1D031CFA00990026 /* 03.png in Resources */,
 				8E6A94E11D031CFA00990026 /* 05.png in Resources */,
 				8E6A94E91D031CFA00990026 /* 13.png in Resources */,
@@ -666,6 +680,7 @@
 				8E6A94C41D02C5C800990026 /* ZYPerson.m in Sources */,
 				8E6A94BC1D02B44900990026 /* UIBarButtonItem+ZYExtension.m in Sources */,
 				8EC8E5231D06E311006F8339 /* ZYRecommandCategoryTableViewCell.m in Sources */,
+				8E0936E01D1236F400598A51 /* ZYRecommandUser.m in Sources */,
 				8EF13C411D045FFF0057FF52 /* ZYRecommendViewController.m in Sources */,
 				8E6A94C71D02D61100990026 /* ZYNavigationController.m in Sources */,
 				8E6A94B71D02B44900990026 /* AppDelegate.m in Sources */,
@@ -674,6 +689,7 @@
 				8EC8E51F1D06CE26006F8339 /* ZYRecommandCategory.m in Sources */,
 				8ED4E6A01CFF042900BA7A68 /* main.m in Sources */,
 				8E6A94B81D02B44900990026 /* ZYEssenceViewController.m in Sources */,
+				8E0931631D0DA9F800598A51 /* ZYUserTableViewCell.m in Sources */,
 				8E6A94BB1D02B44900990026 /* ZYNewViewController.m in Sources */,
 				8E6A94BD1D02B44900990026 /* UIView+ZYExternsion.m in Sources */,
 				8EF141711D0548D60057FF52 /* Foundation+Log.m in Sources */,

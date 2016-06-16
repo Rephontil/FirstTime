@@ -10,4 +10,10 @@
 
 @implementation ZYRecommandCategory
 
+- (NSMutableArray *)users{
+    if (_users == nil) {
+        _users = [[NSMutableArray alloc] initWithCapacity:0];
+    }return _users;
+}
+
 @end
