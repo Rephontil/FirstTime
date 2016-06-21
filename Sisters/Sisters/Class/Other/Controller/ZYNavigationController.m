@@ -20,9 +20,7 @@
 + (void)initialize{
     UINavigationBar* navigationBar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-    ZYLogFun
-//    MainTagSubIcon
-//    navigationbarBackgroundWhite
+//    ZYLogFun
 }
 
 - (void)viewDidLoad {
@@ -55,9 +53,9 @@
         [backBarButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];  //这个地方不是setBackgroundImage
         backBarButton.size = CGSizeMake(100, 30); //这样很low逼,但是可以增大点击范围
 //        backBarButton.contentMode = UIViewContentModeBottomLeft; //作用于UIImageView,对button无效
-//        backBarButton.backgroundColor = [UIColor redColor]; //用于测试的color，不用了。
+
         backBarButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft; //让按钮内部所有内容左对齐
-        backBarButton.contentEdgeInsets = UIEdgeInsetsMake(0,-10, 0, 0); //让文字和作用区域左偏移
+        backBarButton.contentEdgeInsets = UIEdgeInsetsMake(0,-10, 0, 0); //让按钮内部文字和按钮作用区域左偏移10个单位
         /*
         backBarButton.backgroundColor = [UIColor redColor];
         [backBarButton sizeToFit]; //让尺寸跟随里面的内容,这种做大很高大上的,以后一直会用到
@@ -70,10 +68,10 @@
     }
 //    我们这样做的目的是什么？
     [super pushViewController:viewController animated:animated];//进入下一级视图控制器
+    
 }
 
-
-
+//返回上一级视图控制器
 - (void)back{
     [self popViewControllerAnimated:YES];
 }
@@ -81,7 +79,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 //    关于UIButton，既可以采用setBackgroundImage 来设置底部图片，同时也可以采用  setImage方法；
 //    两者还是有一定区别的；
 

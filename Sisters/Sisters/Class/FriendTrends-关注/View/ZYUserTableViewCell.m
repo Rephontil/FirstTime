@@ -6,7 +6,7 @@
 //  Copyright © 2016年 ZhouYong. All rights reserved.
 //
 
-#import "ZYUserTableViewCell.h"
+#import "ZYUserTableViewCell.h" 
 #import "ZYRecommandUser.h"
 #import <UIImageView+WebCache.h>
 
@@ -15,7 +15,6 @@
 - (void)setUser:(ZYRecommandUser *)user{
     _user = user;
     
-//    self.headImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:user.header]]];
     
     self.screen_nameLabel.text = user.screen_name;
     self.fans_countLabel.text = [NSString stringWithFormat:@"%ld",(long)user.fans_count];
@@ -23,7 +22,6 @@
 //    
     [self.headImage sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"nil"]];
 
-    
 }
 
 - (void)awakeFromNib {

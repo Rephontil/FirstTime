@@ -16,6 +16,7 @@
 #import "ZYRecommandUser.h"
 #import <MJRefresh.h>
 
+//宏定义  获得当前选中的对象模型
 #define ZYRecommandCategoryType self.categorys[self.categoryTableview.indexPathForSelectedRow.row]
 
 
@@ -62,7 +63,21 @@ static NSString* const ZYUserID = @"userCell";
     [self setUpRefresh];
     
     [self loadCatelogy];
+}
+
+
+//视图控制器的基本配置
+- (void)setUpTableView{
+    [self.categoryTableview registerNib:[UINib nibWithNibName:NSStringFromClass([ZYRecommandCategoryTableViewCell class]) bundle:nil] forCellReuseIdentifier:ZYCategoryID];
+    [self.userTableview registerNib:[UINib nibWithNibName:NSStringFromClass([ZYUserTableViewCell class]) bundle:nil] forCellReuseIdentifier:ZYUserID];
     
+    self.navigationItem.title = @"推荐关注";
+    self.view.backgroundColor = ZYGlobalColor
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    //    设置tableview的的起始位置紧随导航栏的底部
+    self.categoryTableview.contentInset = UIEdgeInsetsMake(64, 0, 0, 0  );
+    self.userTableview.contentInset = self.categoryTableview.contentInset;
+    self.userTableview.rowHeight = 80;
 }
 
 
@@ -84,30 +99,18 @@ static NSString* const ZYUserID = @"userCell";
         self.categorys = [ZYRecommandCategory mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
         [self.categoryTableview reloadData];
-        //        每次数据刷新后，默认为第一行选中
+        //        每次数据刷新后，默认选中第一行选中
         [self.categoryTableview selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
+//        默认进入用户界面的时候显示第一栏目的相关的内容界面
+        [self.userTableview.mj_header beginRefreshing];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         ZYLog(@"Failure");
         [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败！请检查网络连接"];
     }];
-
 }
 
 
-//视图控制器的基本配置
-- (void)setUpTableView{
-    [self.categoryTableview registerNib:[UINib nibWithNibName:NSStringFromClass([ZYRecommandCategoryTableViewCell class]) bundle:nil] forCellReuseIdentifier:ZYCategoryID];
-    [self.userTableview registerNib:[UINib nibWithNibName:NSStringFromClass([ZYUserTableViewCell class]) bundle:nil] forCellReuseIdentifier:ZYUserID];
-    
-    self.navigationItem.title = @"推荐关注";
-    self.view.backgroundColor = ZYGlobalColor
-    self.automaticallyAdjustsScrollViewInsets = NO;
-//    设置tableview的的起始位置紧随导航栏的底部
-    self.categoryTableview.contentInset = UIEdgeInsetsMake(64, 0, 0, 0  );
-    self.userTableview.contentInset = self.categoryTableview.contentInset;
-    self.userTableview.rowHeight = 80;
-}
 
 //上拉刷新数据
 - (void)setUpRefresh{
@@ -131,7 +134,7 @@ static NSString* const ZYUserID = @"userCell";
     para[@"page"] = @(c.currentPage);
     self.params = para;
     
-    
+
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:para progress:^(NSProgress * _Nonnull downloadProgress)
      {
          
@@ -169,13 +172,13 @@ static NSString* const ZYUserID = @"userCell";
          
          // 结束刷新
          [self.userTableview.mj_header endRefreshing];
-
      }];
-
-    
 }
 
 
+
+
+//上拉加载更多数据
 - (void)loadMoreUsers
 {
     ZYRecommandCategory *category = ZYRecommandCategoryType;
@@ -186,8 +189,9 @@ static NSString* const ZYUserID = @"userCell";
     params[@"c"] = @"subscribe";
     params[@"category_id"] = @(category.id);
     params[@"page"] = @(++category.currentPage);
-    self.params = params;
     
+//    self.params永远存储最后一次的请求参数
+    self.params = params;
     
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 字典数组 -> 模型数组
@@ -196,7 +200,7 @@ static NSString* const ZYUserID = @"userCell";
         // 添加到当前类别对应的用户数组中
         [category.users addObjectsFromArray:users];
         
-        // 不是最后一次请求
+        // 每次数据请求回来的时候，在block回调里面进行判断，如果不是最后一次请求，就不执行下面的代码。
         if (self.params != params) return;
         
         // 刷新右边的表格
@@ -210,14 +214,15 @@ static NSString* const ZYUserID = @"userCell";
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (self.params != params) return;
         
-        // 提醒
+        // 只在最后一次请求失败的时候提醒用户，不会发生视觉错误干扰
         [SVProgressHUD showErrorWithStatus:@"加载用户数据失败"];
         
         // 让底部控件结束刷新
         [self.userTableview.mj_footer endRefreshing];
-
     }];
 }
+
+
 
 /**
  * 时刻监测footer的状态
@@ -238,9 +243,6 @@ static NSString* const ZYUserID = @"userCell";
 }
 
 
-
-
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView == self.categoryTableview) {
         return self.categorys.count;
@@ -251,7 +253,6 @@ static NSString* const ZYUserID = @"userCell";
 
     ZYRecommandCategory* c = self.categorys[self.categoryTableview.indexPathForSelectedRow.row];
     return c.users.count;
-    
 }
 
 
@@ -271,7 +272,7 @@ static NSString* const ZYUserID = @"userCell";
         //        [self.categoryTableview.indexPathForSelectedRow.row]//得到当前点击的tableview的行数
         ZYRecommandCategory* c = self.categorys[self.categoryTableview.indexPathForSelectedRow.row];
         cell.user = c.users[indexPath.row];
-//        self.userTableview.mj_footer.hidden = (c.users.count == 0);
+        self.userTableview.mj_footer.hidden = (c.users.count == 0);
         return cell;
         
     }
@@ -289,19 +290,22 @@ static NSString* const ZYUserID = @"userCell";
     
     if (c.users.count)
     {
+//        如果曾经有数据，直接刷新数据
         [self.userTableview reloadData];
     }
     else
     {
+//        如果没有数据 先刷新表格，再下拉加载数据
         [self.userTableview reloadData];
         [self.userTableview.mj_header beginRefreshing];
     }
 }
 
-#pragma mark - 控制器的销毁
+#pragma mark - 控制器的销毁。
+//一旦控制器被销毁了，就阻止该控制器内部的一切操作
 - (void)dealloc
 {
-    // 停止所有操作
+    // 停止所有操作，还有一种做法就是拿到我们的网络请求的返回对象task，我们对task就行销毁操作也能达到同样的效果。
     [self.manager.operationQueue cancelAllOperations];
 }
 

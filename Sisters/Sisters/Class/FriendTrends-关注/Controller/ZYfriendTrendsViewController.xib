@@ -24,7 +24,7 @@
                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVB-KL-DVm">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVB-KL-DVm">
                     <rect key="frame" x="86" y="444" width="243" height="48"/>
                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                     <state key="normal" title="立即登录/注册" backgroundImage="friendsTrend_login">
@@ -33,6 +33,9 @@
                     <state key="highlighted" backgroundImage="friendsTrend_login_click">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginAndRegistBtn:" destination="-1" eventType="touchUpInside" id="cxc-wD-h2v"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xnp-3a-z3b">
                     <rect key="frame" x="185" y="240" width="44" height="48"/>
