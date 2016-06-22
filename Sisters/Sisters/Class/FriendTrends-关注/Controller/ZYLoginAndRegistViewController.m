@@ -80,7 +80,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    给button控件设置圆角
-    self.registBtn.layer.cornerRadius = 10;
+    self.registBtn.layer.cornerRadius = 7;
 //    让button控件内部的背景也遵循这个圆角规则
     self.registBtn.layer.masksToBounds = YES;
 }

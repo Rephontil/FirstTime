@@ -1,79 +1,47 @@
 //
-//  ZYRecommandTagTViewController.m
+//  ZYWordTableVC.m
 //  Sisters
 //
-//  Created by ZhouYong on 16/6/18.
+//  Created by ZhouYong on 16/6/22.
 //  Copyright © 2016年 ZhouYong. All rights reserved.
 //
 
-#import "ZYRecommandTagTViewController.h"
+#import "ZYWordTableVC.h"
 #import <AFNetworking.h>
-#import <SVProgressHUD.h>
 #import <MJExtension.h>
-#import "ZYRecommendTagModel.h"
-#import "ZYRecommendTagCell.h"
+#import <UIImageView+WebCache.h>
 
+@interface ZYWordTableVC ()
 
-@interface ZYRecommandTagTViewController ()
-
-/**存放数据的数组**/
-@property(nonatomic, strong)NSMutableArray* dataArray;
-
+@property (nonatomic, strong)NSArray* topicsArray;
 
 @end
 
-@implementation ZYRecommandTagTViewController
+@implementation ZYWordTableVC
 
-
-- (NSMutableArray *)dataArray{
-    if (_dataArray == nil) {
-        _dataArray = [[NSMutableArray alloc] initWithCapacity:0];
-    }return _dataArray;
-}
-
-
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = ZYGlobalColor
     
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZYRecommendTagCell" bundle:nil] forCellReuseIdentifier:@"tagCell"];
-
+//    para
+    NSMutableDictionary* paras = [NSMutableDictionary dictionary];
+    paras[@"a"] = @"list";
+    paras[@"c"] = @"data";
+    paras[@"type"] = @29;
     
-    self.navigationItem.title = @"推荐标签";
-    
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
-    
-//   创建一个字典传入参数进行网络数据请求
-    NSMutableDictionary*  parameter= [[NSMutableDictionary alloc] initWithCapacity:0];
-    parameter[@"a"] = @"tag_recommend";
-    parameter[@"action"] = @"sub";
-    parameter[@"c"] = @"topic";
-    
-    
-    //    下面要开始进行网络数据请求
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
+//    AFHttp
+    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:paras progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        如果数据请求成功就会进来
-        ZYLog(@"%@",responseObject);
-        [SVProgressHUD dismiss];  //如果数据请求成功，就消失圈圈
-        self.dataArray = [ZYRecommendTagModel mj_objectArrayWithKeyValuesArray:responseObject];
+        ZYLog(@"%@",responseObject)
+//        最外层是一个字典
+        self.topicsArray = responseObject[@"list"];
         [self.tableView reloadData];
         
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-
-        [SVProgressHUD showErrorWithStatus:@"加载失败"];
+        ZYLog(@"%@",error.userInfo);
     }];
+    
 }
-
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -83,26 +51,33 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return self.dataArray.count;
-
+    return self.topicsArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 120;
+    return 100;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ZYRecommendTagCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tagCell" forIndexPath:indexPath];
-    cell.model = self.dataArray[indexPath.row];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
+    cell.textLabel.text = self.topicsArray[indexPath.row][@"name"];
+    cell.detailTextLabel.text = self.topicsArray[indexPath.row][@"text"];
+    [cell.imageView sd_setImageWithURL:self.topicsArray[indexPath.row][@"profile_image"] placeholderImage:[UIImage imageNamed:@"04"]];
+    
     return cell;
 }
 
 
 
-//Override to support conditional eniting of the table view s
 
 /*
 // Override to support conditional editing of the table view.
