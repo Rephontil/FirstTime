@@ -1,13 +1,14 @@
 //
-//  ZYVoiceTableVC.h
+//  ZYWordModel.m
 //  Sisters
 //
 //  Created by ZhouYong on 16/6/22.
 //  Copyright © 2016年 ZhouYong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZYWordModel.h"
 
-@interface ZYVoiceTableVC : UITableViewController
+@implementation ZYWordModel
+
 
 @end
